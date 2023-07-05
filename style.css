@@ -29,6 +29,7 @@ body {
 
     /* backgrund color image repeat position/size */
     background:  var(--bg-url) no-repeat top center/cover ;
+    height: 100%vh;
 }
 
 /*profile*/
@@ -62,8 +63,11 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-}
 
+    animation: slide-back 0.4s ; 
+    
+}
+/* não precisa colocar o forward pois seria redundante, afinal o valor de left padrão já está em 0 */
 #switch span {
     display: block;
     width: 64px;
@@ -76,10 +80,12 @@ body {
 }
 
 .light #switch button {
-    left: initial;
-    right: 0;
+    animation: slide-in 0.4s forwards;
 }
 
+#switch button:hover {
+    outline: 8px solid var(--stroke-color);
+} 
 #profile h3 {
     font-weight: 500;
     line-height: 24px;
@@ -87,7 +93,8 @@ body {
 
 /* container */
 #container {
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0px;
     padding: 0px 24px;
 }
@@ -151,3 +158,22 @@ footer {
     border-radius: 50%;
 }
 
+/* animation */
+@keyframes slide-in {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 50%;
+        
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left:50%;
+    }
+    to {
+        left:0%;
+    }
+}
