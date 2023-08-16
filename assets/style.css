@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+}
+
+
+body {
+    background: var(--body-bg-color);
+    height: 100%vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+
+}
+
+aside {
+    flex: 0;
+    padding: 2.5rem ;
+    width: 21.75rem; 
+}
+
+#profile {
+    background: var(--bg-cards);
+    color: var(--text-color);
+    text-align: center;
+    justify-content: center;
+    max-height: 18.25rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+}
+
+
+#profileSubtitle strong {
+    padding: 0.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Merriweather Sans;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#profileSubtitle strong {
+    font-size: 26px;
+}
+
+#profileSubtitle h3 {
+    font-family: Merriweather Sans;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    
+}
+
+#profile img {
+    width: 8rem;
+    border-radius: 10%;
+    border: 2px solid rgb(72, 8, 8);
+    border-radius: 128px;
+    margin: 2rem;
+
+}
+
+#profInfo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    max-width: 23.75rem;
+    margin-bottom: 1.5rem;
+}
+#profInfo ul li a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+#profInfo ul {
+    list-style: none;
+    padding: 2rem;
+}
+#profInfo ul li {
+
+    margin: 10px 0px;
+}
+#profInfo img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.6rem;
+}
+
+#tec {
+    height: 13rem;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    
+}
+
+#tec h1 {
+    padding: 1.25rem 1.875rem;
+    text-align: left;
+
+}
+#tec ul {
+    text-align: center;
+    padding: 0.6875rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#tec ul li {
+    border-radius: 30px;
+    background: var(--bg-techs);
+    color: black;
+    font-size: 0.625rem;
+    margin: 0.25rem 1.5rem;
+    padding:  0.5rem;
+    width: 5.375rem;
+    text-align: center;
+}
+
+#experiencies {
+    height: 21.8125rem;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+#experiencies h1 {
+    text-align: left;
+    padding: 1.875rem 1.25rem;
+}
+#experiencies p {
+    margin: 0.5rem;
+}
+#education {
+    height: 21.8125rem;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: circle;
+    
+}
+
+#education h1 {
+    text-align: left;
+    padding: 1.875rem 1.25rem;
+}
+
+#education p {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+#curso {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+#education ul li {
+    padding: 0.3rem;
+
+}
+
+#education ul {
+    margin-left: 2.5rem;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 2.5rem 0 ;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    max-width: 67.5rem;
+
+}
+#search {
+    display: flex;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+#search p {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+#search  h1{
+    font-size: 1.25rem;
+}
+
+#projects {
+    padding: 1.5rem 0rem;
+    display: inline-flex;
+}
+
+#project{
+    list-style-type:none;
+    background: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    border-radius: 20px;
+    max-width: 100%vh;
+    margin-right: 10px;
+    flex: 1;
+    
+}
+#project figure {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+#projectTitle {
+    display: flex;
+    flex-direction:row;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+#project p {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+#project a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+#projectFooter {
+    display: flex;
+}
+#projectFooter figcaption {
+    padding-left: 0.4rem;
+}
+#projectFooterLanguage {
+    margin-left: auto;
+}
+#projectFooterLanguage img {
+    padding-top: 0.5rem;
+}
+
+
+
+#recentPosts{
+    display: flex;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    padding: 1rem;
+    justify-content: space-between;
+}
+#post {
+    display: flex;
+    background: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.20);
+    padding: 1rem;
+    justify-content: space-between;
+    margin: 2.5rem 0rem;
+    max-width: 100%vh;
+}
+#post img {
+    width: 8rem;
+    margin-right: auto;
+    padding: 1rem;
+}
+#post strong {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+#post h4 {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+#post p {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1.5rem 0rem;
+}
+
+#post a {
+    padding: 0rem 0.5rem;
+    text-decoration: none;
+}
+#postTittle {
+    margin-right: auto;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; 
+    }
+
+    aside {
+        width: 100%; 
+    }
+
+    #profile img {
+        width: 6rem; 
+        margin: 1rem;
+    }
+
+    #profInfo {
+        max-width: 100%; 
+    }
+
+    #post {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 1.5rem 0rem;
+    }
+
+    #post img {
+        width: 6rem;
+        padding: 0.5rem;
+    }
+
+    #post p {
+        padding: 1rem 0rem;
+    }
+
+
+
+}
+
